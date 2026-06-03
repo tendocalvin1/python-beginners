@@ -66,3 +66,26 @@ def add_numbers(*args):
     return total
 
 print(add_numbers(10,20,30))
+
+
+def lecturer(*args, **kwargs):
+    for course in args:
+        print(course)
+        
+    for item in kwargs.items():
+        print(item)
+    
+    # print(kwargs)
+    # print(type(kwargs))
+    
+    # for item in kwargs.items():
+    #     print(item)
+        
+    
+lecturer(
+    "AI engineer",
+    "Backend engineer",
+    name ="Tendo",
+    origin = "Uganda",
+    age = 24
+)
