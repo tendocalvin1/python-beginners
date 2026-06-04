@@ -44,3 +44,29 @@ channels = ["aftv", "DR sports", "That's Football"]
 removed = channels.pop()
 print(removed)
 print(channels)
+
+numbers = [10,20,30]
+
+removed = numbers.pop(1)
+
+print(removed)
+print(numbers)
+
+
+# sort() - This organises a list
+numbers = [5,1,2,9]
+numbers.sort()
+print(numbers)
+
+
+# reverse() - Reverse the list in place
+numbers = [1,2,3]
+numbers.reverse()
+print(numbers)
+
+
+skills = ["Python", "Django", "Docker"]
+
+skills.reverse()
+
+print(skills)
