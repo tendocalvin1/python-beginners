@@ -70,3 +70,48 @@ skills = ["Python", "Django", "Docker"]
 skills.reverse()
 
 print(skills)
+
+
+# nested lists
+# A list can contain other lists
+
+matrix = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+print(matrix[0]) # result = list that has numbers 1 and 2
+print(matrix[0][1])  # result = number 2
+
+
+# challenge 1
+logs = ["info", "warning", "error", "critical"]
+print(logs[2:])
+
+
+# challenge 2
+servers = ["web-1", "web-2", "db-1", "cache-1"]
+servers.reverse()
+
+print(servers)
+
+
+# challenge 3
+cpu_usages = [90, 50, 20, 70]
+cpu_usages.sort()
+
+print(cpu_usages)
+
+
+# challenge 4
+frameworks = ["Django", "FastAPI"]
+frameworks.insert(1, "Flask")
+
+print(frameworks)
+
+
+servers = ["web", "database", "cache"]
+
+for index, server in enumerate(servers):
+    print(index, server)
