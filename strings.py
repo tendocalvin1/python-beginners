@@ -75,3 +75,21 @@ name_one = "Tendo"
 
 for letter in name_one:
     print(letter)
+    
+
+username = "kamara"
+
+print(f"Welcome {username.upper()}")
+
+
+character = "Danny"
+for letter in character:
+    print(letter)
+
+
+email_address = 'danny@gmail.com'
+if "@" in email_address:
+    print("Valid email address")
+    
+else:
+    print("Invalid email address")
