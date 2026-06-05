@@ -77,15 +77,14 @@ show_server("web-01")
         
 # calculate_total(10, 20, 30)
 
-numbers = [10, 20, 30]
 
-def calculate_total(*args):
+def calculate_total(*numbers):
     total = 0
     for number in numbers:
-        total += numbers
-        return total
+        total += number
+    return total
         
-print(calculate_total())
+print(calculate_total(10,20,30))
         
 
 
