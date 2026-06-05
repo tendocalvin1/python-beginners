@@ -13,6 +13,7 @@ car2 = Car("Tesla", 2026, "black", True)
 
 car1.drive()
 car1.stop()
+car1.describe()
 
 print(car2.color)
 print(car2.model)
