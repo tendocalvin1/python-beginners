@@ -31,6 +31,26 @@ admin = AdminUser("Tendo", "tendo@gmail.com", ["delete_users"])
 print(admin.username)
 print(admin.email)
 print(admin.permissions)
-    
+
+# Systems Engineering Example
+
+# Imagine monitoring servers.
+
+class Server:
+    def __init__(self, hostname, ip_address):
+        self.hostname = hostname
+        self.ip_address = ip_address
+        
+class WebServer(Server):
+    def __init__(self, hostname, ip_address, domain):
+        super().__init__(hostname, ip_address)
+        
+        self.domain = domain
+        
+web = WebServer("server01","192.168.1.1","example.com")
+
+print(web.domain)
+print(web.hostname)
+print(web.ip_address)
     
         
