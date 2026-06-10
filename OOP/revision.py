@@ -164,3 +164,24 @@ account.withdraw(300)
 account.apply_interest()
 account.display_balance()  
         
+        
+# Why this version is better
+# 1. No unnecessary self.amount
+# amount is only needed while the method is running.
+
+# 2. It doesn't belong to the account permanently.
+# Validation in withdraw()
+# Prevents withdrawing more money than available.
+
+# 3. SavingsAccount has its own behavior
+# apply_interest() is unique to a savings account.
+# This demonstrates why inheritance is useful.
+
+# 4. Parent handles common functionality
+# deposit()
+# withdraw()
+# display_balance()
+
+# 5. Child handles specialized functionality
+# interest_rate
+# apply_interest()
