@@ -28,3 +28,26 @@ class Child(Parent):
 child1 = Child("Tendo Calvin")
 child1.introduce()
 
+
+
+class Vehicle:
+    def __init__(self, brand, name, year):
+        self.brand = brand
+        self.name = name
+        self.year = year
+        
+    def start(self):
+        print("The vehicle has started moving")
+        
+    def stop(self):
+        print("The vehicle has stopped moving")
+        
+    
+class Car(Vehicle):
+    pass
+
+car1 = Car("Tesla SUV","Model 2026", 2026)
+car1.start()
+car1.stop()
+
+print(car1.year)
