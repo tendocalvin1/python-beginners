@@ -1,4 +1,4 @@
-
+# bank account class in inheritance
 
 from bankAccount import BankAccount
 
