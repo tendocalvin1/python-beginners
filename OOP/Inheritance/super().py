@@ -1,4 +1,5 @@
 # use of the super() method in inheritance and in particular OOP
+# it is used to add attributes to ther other class where they do not share the attributes
 
 class Animal:
     def __init__(self, name):
