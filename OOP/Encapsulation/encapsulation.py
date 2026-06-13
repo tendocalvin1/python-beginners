@@ -32,3 +32,18 @@
 # You interact through approved actions.
 
 # That's encapsulation.
+
+
+# The Biggest Misconception
+
+# Many people think:
+
+# Encapsulation = private variables
+
+# Wrong.
+
+# Private variables are only one technique.
+
+# The real idea is:
+
+# Control how data is accessed and modified.
