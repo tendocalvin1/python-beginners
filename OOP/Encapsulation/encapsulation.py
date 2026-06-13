@@ -1,3 +1,6 @@
+# The pillars of OOP that must be covered include: Inheritance, Polymorphism, abstraction and encapsulation
+# Each pillar is meant to perform a particular task given
+
 # Simple Definition
 
 # Encapsulation means:
