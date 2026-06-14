@@ -130,8 +130,7 @@ class AI_Agent:
     def show_key(self):
         print(ai_agent1.__api_key)
         
-    
-        
+             
 ai_agent1 = AI_Agent("&5%$23@1456788908")
 ai_agent1.update_key("&5%$23@@###@67755")
 # print(ai_agent1.__api_key)
