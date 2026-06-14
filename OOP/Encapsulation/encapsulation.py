@@ -90,12 +90,13 @@ class User:
         self.__password = password
         
     def show_password(self):
-        print(user.__password)
+        print(self.__password)
         
-user = User("Dave123")
-user.show_password()
-user.change_password("Tendo04")
-user.show_password() 
+user1 = User("Dave123")
+user2 = User("David Becks")
+user1.show_password()
+user2.change_password("Tendo04")
+user2.show_password() 
 
 
 # Exercise 2
@@ -104,13 +105,13 @@ class Server:
         self.__status = status
         
     def start(self):
-        print("The server is running")
+        self.__status = "running"
         
     def stop(self):
-        print("The server stopped running")
+        self.__status = "stopped"
         
     def get_status(self):
-        print(server1.__status)
+        print(self.__status)
         
 
 server1 = Server("running")
@@ -128,9 +129,10 @@ class AI_Agent:
         self.__api_key = api_key
         
     def show_key(self):
-        print(ai_agent1.__api_key)
+        print(self.__api_key)
         
              
 ai_agent1 = AI_Agent("&5%$23@1456788908")
-ai_agent1.update_key("&5%$23@@###@67755")
-# print(ai_agent1.__api_key)
+ai_agent1.show_key()
+# ai_agent1.update_key("&5%$23@@###@67755")
+
