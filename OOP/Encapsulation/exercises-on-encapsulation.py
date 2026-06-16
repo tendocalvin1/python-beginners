@@ -65,5 +65,52 @@ class RateLimiter:
 requests = RateLimiter(-1)
 requests.make_request()
 requests.show_remaining()
+
+
+# Exercise 4: Server Monitoring
+class Server:
+    def __init__(self, cpu_usage):
+        self.__cpu_usage = cpu_usage
+        
+        if (self.__cpu_usage >= 0 and  100):
+            print("This is a valid value")
+            
+        else:
+            print("Invalid valid, out of range!")
+        
+    def increase_amount(self, amount):
+        self.__cpu_usage  += 1
+        
+    def decrease_usage(self, amount):
+        self.__cpu_usage -= 1
+        
+    
+    def show_usage(self):
+        print(self.__cpu_usage)
+        
+web1 = Server(105)
+web1.show_usage()
+
+
+# Exercise 5: AI Agent Memory
+class AIAgent:
+    def __init__(self, memory_count):
+        self.__memory_count = memory_count
+        
+    def remember(self):
+        self.__memory_count += 1
+        
+    def forget(self):
+        self.__memory_count -= 1
+        
+    def show_memory(self):
+        print(self.__memory_count)
+        
+
+rag = AIAgent(100)
+rag.remember()
+rag.show_memory()
+        
+    
         
     
