@@ -47,16 +47,15 @@ postgreSQL.status()
 
 class RateLimiter:
     def __init__(self, requests_remaining):
-        self.__requests_remaining = requests_remaining
+        self.__requests_remaining = 5
         
     def make_request(self):
-        self.__requests_remaining -= 1
-        
-        if self.__requests_remaining < 0:
-            print("Requests cannot be less than zero")
+        if self.__requests_remaining > 0:
+            self.__requests_remaining -= 1
+            print("Requests successful")
             
-        # else:
-        #     print("Invalid request")
+        else:
+            print("No requests remaining")
             
     def show_remaining(self):
         print(self.__requests_remaining)
@@ -72,17 +71,20 @@ class Server:
     def __init__(self, cpu_usage):
         self.__cpu_usage = cpu_usage
         
-        if (self.__cpu_usage >= 0 and  100):
-            print("This is a valid value")
-            
-        else:
-            print("Invalid valid, out of range!")
         
     def increase_amount(self, amount):
-        self.__cpu_usage  += 1
+        if self.__cpu_usage + amount <= 100:
+            self.__cpu_usage += amount
         
+        else:
+            print("CPU usage cannot exceed 100")
+                
     def decrease_usage(self, amount):
-        self.__cpu_usage -= 1
+        if self.__cpu_usage - amount >= 0:
+            self.__cpu_usage -= amount
+            
+        else:
+            print("CPU usage cannot go below 0")
         
     
     def show_usage(self):
@@ -101,7 +103,10 @@ class AIAgent:
         self.__memory_count += 1
         
     def forget(self):
-        self.__memory_count -= 1
+        if self.__memory_count > 0:
+            self.__memory_count -= 1
+        else:
+            print("No memories to forget")
         
     def show_memory(self):
         print(self.__memory_count)
@@ -110,6 +115,8 @@ class AIAgent:
 rag = AIAgent(100)
 rag.remember()
 rag.show_memory()
+
+
         
     
         
