@@ -116,7 +116,6 @@ rag = AIAgent(100)
 rag.remember()
 rag.show_memory()
 
-
         
     
         
