@@ -78,4 +78,4 @@ search_tool = SearchTool()
 calc_tool = CalculatorTool()
 
 search_tool.execute("AI agents")
-calc_tool.execute("100 + 250")  # ✅ makes actual sense now
+calc_tool.execute("100 + 250")  
