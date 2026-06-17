@@ -59,7 +59,6 @@ weather.execute()
 translator = TranslationTool()
 translator.execute()
    
-   
 database = DatabaseTool()
 database.execute() 
         
