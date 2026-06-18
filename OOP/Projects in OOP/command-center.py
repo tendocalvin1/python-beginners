@@ -1,4 +1,4 @@
-# AI Agent Command Center ⭐
+# Exercise 1: AI Agent Command Center ⭐
 from abc import ABC, abstractmethod
 
 class Tool(ABC):
