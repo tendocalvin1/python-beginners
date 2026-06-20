@@ -1,4 +1,5 @@
 # Composition
+# Composition examples to show difference between composition and inheritance
 class Engine:
     def start(self):
         print("Engine started")
