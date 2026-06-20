@@ -1,5 +1,6 @@
 # Multiple Inheritance
 # A class can inherit from more than one parent.
+# A simple AI agent that I have designed
 
 class SearchTool:
     def search(self):
