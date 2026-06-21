@@ -1,3 +1,4 @@
+# The goal of OOP is to learn systems thinking and become better engineers
 # What Is Inheritance?
 
 # Imagine a family.
