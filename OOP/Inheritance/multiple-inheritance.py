@@ -2,6 +2,7 @@
 # A class can inherit from more than one parent.
 # A simple AI agent that I have designed
 
+#   OOP helps in building complex systems and also heps in creating readable code
 class SearchTool:
     def search(self):
         print("Searching...")
