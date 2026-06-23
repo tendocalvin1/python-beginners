@@ -3,6 +3,8 @@
 # A simple AI agent that I have designed
 
 #   OOP helps in building complex systems and also heps in creating readable code
+
+# OOP helps in also creating separation of concerns
 class SearchTool:
     def search(self):
         print("Searching...")
