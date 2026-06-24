@@ -5,6 +5,8 @@
 #   OOP helps in building complex systems and also heps in creating readable code
 
 # OOP helps in also creating separation of concerns
+
+# implementation of a simple AI agent tool using OOP pillars
 class SearchTool:
     def search(self):
         print("Searching...")
