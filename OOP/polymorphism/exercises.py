@@ -1,6 +1,6 @@
 # Now to understand polymorphism and how it works, I need to do some exercises so that
 # the concept becomes second nature to me
-
+# polymorphism is one of the important pillars of OOP
 # Exercises on another pillar of OOP (Polymorphism)
 
 # exercise one
