@@ -1,6 +1,7 @@
 # Composition
 # Composition examples to show difference between composition and inheritance
 # composition helps in avoiding repetition compared to inheritance
+# composition helps in designing better systems
 class Engine:
     def start(self):
         print("Engine started")
